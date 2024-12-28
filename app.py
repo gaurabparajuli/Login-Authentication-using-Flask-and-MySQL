@@ -8,7 +8,7 @@ from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Gaurab1997@localhost:3306/neupane_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:your_mysql_workbench_user_password@localhost:3306/neupane_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '123'
 db = SQLAlchemy(app)
